@@ -7,6 +7,7 @@ import { ShowingNowComponent } from './pages';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { menu } from 'src/menu';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     NavBarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [{ provide: 'menu', useValue: menu }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

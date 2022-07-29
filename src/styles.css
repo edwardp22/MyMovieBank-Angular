@@ -6,11 +6,11 @@
 }
 
 /* Container styles */
-#mainContainer {
+body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#mainContainer > div > div {
+#mainContainer {
   min-height: 100vh;
   background-color: white;
 }
@@ -54,4 +54,12 @@ nav a:hover {
 nav .active {
   background-color: var(--primary-color);
   color: white;
+}
+
+.registrationButton {
+  background-color: darkgoldenrod;
+}
+
+.registrationButton:hover {
+  background-color: gold;
 }
